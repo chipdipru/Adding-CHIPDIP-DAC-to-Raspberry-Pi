@@ -15,3 +15,7 @@ chmod +x Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh
 4) Start script to install ChipDip DACs
 
 Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh
+
+5) Reboot system to complete installation
+
+reboot
