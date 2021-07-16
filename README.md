@@ -1,22 +1,22 @@
 # Adding-CHIPDIP-DAC-to-Raspberry-Pi
 
-1) Install git
+<em><strong>1) Install git</em></strong>
 
 sudo apt install git
 
-2) Clone git repository
+<em><strong>2) Clone git repository</em></strong>
 
 git clone https://github.com/chipdipru/Adding-CHIPDIP-DAC-to-Raspberry-Pi
 
-3) Make script "chipdip-dac-install.sh" executable
+<em><strong>3) Make script "chipdip-dac-install.sh" executable</em></strong>
 
 chmod +x Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh
 
-4) Start script to install ChipDip DACs
+<em><strong>4) Start script to install ChipDip DACs</em></strong>
 
 Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh
 
-5) Reboot system to complete installation
+<em><strong>5) Reboot system to complete installation</em></strong>
 
 reboot
 
