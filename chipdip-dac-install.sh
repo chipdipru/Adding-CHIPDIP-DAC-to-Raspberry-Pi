@@ -2,12 +2,10 @@
 
 echo "Installing ChipDip DACs..."
 
-cp /volumio/ChipDipDACs/chipdip-i2s-master-dac.dtbo /boot/overlays/chipdip-i2s-master-dac.dtbo
-cp /volumio/ChipDipDACs/./RasGPIOCtrl_v5 /volumio/app/plugins/system_controller/i2s_dacs/scripts/./RasGPIOCtrl_v5
-cp /volumio/ChipDipDACs/chipdip-dac-init.sh /volumio/app/plugins/system_controller/i2s_dacs/scripts/chipdip-dac-init.sh
-chmod +x /volumio/app/plugins/system_controller/i2s_dacs/scripts/./RasGPIOCtrl_v5
-chmod +x /volumio/app/plugins/system_controller/i2s_dacs/scripts/chipdip-dac-init.sh
-sed -i '4 a {"id":"chipdip-master-dac","name":"CHIPDIP Master DAC","overlay":"chipdip-i2s-master-dac","alsanum":"2","mixer":"","modules":"","script":"chipdip-dac-init.sh","needsreboot":"yes"},' /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
-sed -i '5 a {"id":"chipdip-slave-dac","name":"CHIPDIP Slave DAC","overlay":"hifiberry-dac","alsanum":"2","mixer":"","modules":"","script":"chipdip-dac-init.sh","needsreboot":"yes"},' /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
+sudo cp Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-i2s-master-dac.dtbo /boot/overlays/chipdip-i2s-master-dac.dtbo
+sudo chmod +x Adding-CHIPDIP-DAC-to-Raspberry-Pi/./chipdip-dac-driver_v1
+sudo sed -i '/^exit 0/i ./chipdip-dac-driver_v1 &' /etc/rc.local
+sudo sed -i 's/^dtparam=audio=on/#dtparam=audio=on/g' /boot/config.txt
+sed -i -e '$adtoverlay=chipdip-i2s-master-dac' /boot/config.txt
 
 echo "Reboot to complete installation"
