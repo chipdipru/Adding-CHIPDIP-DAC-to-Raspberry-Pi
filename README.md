@@ -2,23 +2,23 @@
 
 <em><strong>1) Install git</em></strong>
 
-<code>sudo apt install git</code>
+<pre><code>sudo apt install git</code></pre>
 
 <em><strong>2) Clone git repository</em></strong>
 
-<code>git clone https://github.com/chipdipru/Adding-CHIPDIP-DAC-to-Raspberry-Pi</code>
+<pre><code>git clone https://github.com/chipdipru/Adding-CHIPDIP-DAC-to-Raspberry-Pi</code></pre>
 
 <em><strong>3) Make script "chipdip-dac-install.sh" executable</em></strong>
 
-<code>chmod +x Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh</code>
+<pre><code>chmod +x Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh</code></pre>
 
 <em><strong>4) Start script to install ChipDip DACs</em></strong>
 
-<code>Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh</code>
+<pre><code>Adding-CHIPDIP-DAC-to-Raspberry-Pi/chipdip-dac-install.sh</code></pre>
 
 <em><strong>5) Reboot system to complete installation</em></strong>
 
-<code>reboot</code>
+<pre><code>reboot</code></pre>
 
 <a class="link" href="https://www.chipdip.ru/product0/9000827685">RasPi DSP Machine 1, Master Beta1, CODEC - аудио процессор для Raspberry Pi, ADAU1701 x 1</a><br>
 <a class="link" href="https://www.chipdip.ru/product0/9000827686">RasPi DSP Machine 2, Master Beta1, DAC - аудио процессор для Raspberry Pi, PCM5242 x 1</a>
