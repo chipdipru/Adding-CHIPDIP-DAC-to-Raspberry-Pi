@@ -2,7 +2,7 @@
 
 <em><strong>1) Install git</em></strong>
 
-sudo apt install git
+<code>sudo apt install git</code>
 
 <em><strong>2) Clone git repository</em></strong>
 
